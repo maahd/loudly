@@ -16,6 +16,7 @@
 		BF6E2A312543C23800AF7751 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2A302543C23800AF7751 /* Repositories.swift */; };
 		BF6E2A332543C2B000AF7751 /* URLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2A322543C2B000AF7751 /* URLHelpers.swift */; };
 		BF6E2A352543C9C200AF7751 /* RepositoryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2A342543C9C200AF7751 /* RepositoryDetailController.swift */; };
+		BF6E2A372544C90200AF7751 /* RepositoryDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E2A362544C90200AF7751 /* RepositoryDetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BF6E2A302543C23800AF7751 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		BF6E2A322543C2B000AF7751 /* URLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelpers.swift; sourceTree = "<group>"; };
 		BF6E2A342543C9C200AF7751 /* RepositoryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailController.swift; sourceTree = "<group>"; };
+		BF6E2A362544C90200AF7751 /* RepositoryDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BF6E2A1B2543BC8B00AF7751 /* SceneDelegate.swift */,
 				BF6E2A1F2543BC8B00AF7751 /* Main.storyboard */,
 				BF6E2A2D2543C04100AF7751 /* RepositoryDetailCollectionViewController.swift */,
+				BF6E2A362544C90200AF7751 /* RepositoryDetailCollectionViewCell.swift */,
 				BF6E2A222543BC8D00AF7751 /* Assets.xcassets */,
 				BF6E2A242543BC8D00AF7751 /* LaunchScreen.storyboard */,
 				BF6E2A272543BC8D00AF7751 /* Info.plist */,
@@ -159,6 +162,7 @@
 				BF6E2A332543C2B000AF7751 /* URLHelpers.swift in Sources */,
 				BF6E2A312543C23800AF7751 /* Repositories.swift in Sources */,
 				BF6E2A1A2543BC8B00AF7751 /* AppDelegate.swift in Sources */,
+				BF6E2A372544C90200AF7751 /* RepositoryDetailCollectionViewCell.swift in Sources */,
 				BF6E2A352543C9C200AF7751 /* RepositoryDetailController.swift in Sources */,
 				BF6E2A1C2543BC8B00AF7751 /* SceneDelegate.swift in Sources */,
 			);

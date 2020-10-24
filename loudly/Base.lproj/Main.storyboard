@@ -22,7 +22,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="repositoryDetailCell" id="aiQ-bL-RoQ" customClass="RepositoryDetailCell" customModule="loudly" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="repositoryDetailCell" id="aiQ-bL-RoQ" customClass="RepositoryDetailCollectionViewCell" customModule="loudly" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vcU-3M-yoi">
@@ -72,9 +72,9 @@
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="414" height="257"/>
                                 <connections>
-                                    <outlet property="name" destination="5KT-VL-cnM" id="Qh5-IN-3Q1"/>
-                                    <outlet property="ownerLoginName" destination="Sge-BE-jbX" id="wQz-06-v9z"/>
-                                    <outlet property="size" destination="c2o-rZ-GPc" id="VVb-oH-vkX"/>
+                                    <outlet property="name" destination="5KT-VL-cnM" id="H1l-bb-o40"/>
+                                    <outlet property="ownerLoginName" destination="Sge-BE-jbX" id="Cj3-ni-oX4"/>
+                                    <outlet property="size" destination="c2o-rZ-GPc" id="Te9-Ba-aea"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

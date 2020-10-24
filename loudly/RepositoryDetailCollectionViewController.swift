@@ -10,13 +10,6 @@ import UIKit
 
 private let reuseIdentifier = "repositoryDetailCell"
 
-class RepositoryDetailCell: UICollectionViewCell {
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var ownerLoginName: UILabel!
-    @IBOutlet weak var size: UILabel!
-    
-}
-
 class RepositoryDetailCollectionViewController: UICollectionViewController {
     
     let repositoryDetailController = RepositoryDetailController()
@@ -66,13 +59,13 @@ class RepositoryDetailCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RepositoryDetailCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RepositoryDetailCollectionViewCell
     
         // Configure the cell
         let repository = self.items[indexPath.row]
         cell.name.text = "Repository Name: \(repository.name)"
         cell.ownerLoginName.text = "Owner Login Name: \(repository.owner.login)"
-        cell.size.text = "Size: \(String(repository.size)) bytes"
+        cell.size.text = "Size: \(repository.size) bytes"
         if (repository.hasWiki) {
             cell.backgroundColor = .green
         } else {
