@@ -21,13 +21,11 @@ class RepositoryDetailController {
         let task = URLSession.shared.dataTask(with: url) { (data, respone, error) in
             let jsonDecoder = JSONDecoder()
             if let data = data, let repositories = try? jsonDecoder.decode(Repositories.self, from: data) {
-                print(repositories)
                 completion(repositories)
             } else {
                 print("Either no data was returned, or data was not properly decoded.")
                 completion(nil)
             }
-            //PlaygroundPage.current.finishExecution()
         }
 
         task.resume()

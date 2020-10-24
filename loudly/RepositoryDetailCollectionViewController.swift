@@ -26,17 +26,12 @@ class RepositoryDetailCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         repositoryDetailController.fetchRepositories { (fetchedReposotories) in
             DispatchQueue.main.async {
                 self.items = fetchedReposotories!.items
-                self.repositoryCount = self.items.count
                 self.collectionView.reloadData()
             }
-//            for item in items {
-//                print(item)
-//            }
-            //print(fetchedReposotories)
         }
         
         // Uncomment the following line to preserve selection between presentations
@@ -68,7 +63,7 @@ class RepositoryDetailCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return repositoryCount
+        return self.items.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
