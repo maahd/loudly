@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4er-mD-xPS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Repository Detail Collection View Controller-->
+        <scene sceneID="8fK-ZJ-svu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <collectionViewController id="4er-mD-xPS" customClass="RepositoryDetailCollectionViewController" customModule="loudly" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zwd-zL-pDW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MSy-12-yTc">
+                            <size key="itemSize" width="414" height="257"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="repositoryDetailCell" id="aiQ-bL-RoQ" customClass="RepositoryDetailCell" customModule="loudly" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vcU-3M-yoi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KT-VL-cnM">
+                                            <rect key="frame" x="120" y="50" width="176" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sge-BE-jbX">
+                                            <rect key="frame" x="120" y="130" width="176" height="37"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2o-rZ-GPc">
+                                            <rect key="frame" x="120" y="195" width="176" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Sge-BE-jbX" firstAttribute="leading" secondItem="vcU-3M-yoi" secondAttribute="leading" constant="120" id="31n-rA-F2h"/>
+                                        <constraint firstAttribute="trailing" secondItem="c2o-rZ-GPc" secondAttribute="trailing" constant="118" id="GWh-9k-Ecw"/>
+                                        <constraint firstItem="Sge-BE-jbX" firstAttribute="top" secondItem="5KT-VL-cnM" secondAttribute="bottom" constant="41" id="I6A-QT-TGz"/>
+                                        <constraint firstItem="5KT-VL-cnM" firstAttribute="top" secondItem="vcU-3M-yoi" secondAttribute="top" constant="50" id="OrF-m9-XvR"/>
+                                        <constraint firstItem="c2o-rZ-GPc" firstAttribute="top" secondItem="Sge-BE-jbX" secondAttribute="bottom" constant="28" id="TdL-IP-AFR"/>
+                                        <constraint firstItem="Sge-BE-jbX" firstAttribute="top" secondItem="5KT-VL-cnM" secondAttribute="bottom" constant="41" id="Xbn-7y-o5j"/>
+                                        <constraint firstAttribute="trailing" secondItem="5KT-VL-cnM" secondAttribute="trailing" constant="118" id="gHD-uT-7oc"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sge-BE-jbX" secondAttribute="trailing" constant="118" id="ju6-Qp-gZ9"/>
+                                        <constraint firstItem="c2o-rZ-GPc" firstAttribute="top" secondItem="Sge-BE-jbX" secondAttribute="bottom" constant="28" id="qDe-eB-tAc"/>
+                                        <constraint firstAttribute="bottom" secondItem="c2o-rZ-GPc" secondAttribute="bottom" constant="26" id="rqY-BI-3Zr"/>
+                                        <constraint firstItem="5KT-VL-cnM" firstAttribute="leading" secondItem="vcU-3M-yoi" secondAttribute="leading" constant="120" id="vcU-i7-Ux4"/>
+                                        <constraint firstItem="c2o-rZ-GPc" firstAttribute="leading" secondItem="vcU-3M-yoi" secondAttribute="leading" constant="120" id="xvy-43-GKU"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="414" height="257"/>
+                                <connections>
+                                    <outlet property="name" destination="5KT-VL-cnM" id="Qh5-IN-3Q1"/>
+                                    <outlet property="ownerLoginName" destination="Sge-BE-jbX" id="wQz-06-v9z"/>
+                                    <outlet property="size" destination="c2o-rZ-GPc" id="VVb-oH-vkX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="4er-mD-xPS" id="u1v-IN-aGr"/>
+                            <outlet property="delegate" destination="4er-mD-xPS" id="Kwv-ls-42x"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="ikx-5M-SHx"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bd-75-dc1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="774.77678571428567"/>
         </scene>
     </scenes>
 </document>
