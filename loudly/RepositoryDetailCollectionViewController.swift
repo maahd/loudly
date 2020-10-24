@@ -21,7 +21,6 @@ class RepositoryDetailCollectionViewController: UICollectionViewController {
     
     let repositoryDetailController = RepositoryDetailController()
     
-    var repositoryCount = 0
     var items: [Item] = []
 
     override func viewDidLoad() {
@@ -71,10 +70,9 @@ class RepositoryDetailCollectionViewController: UICollectionViewController {
     
         // Configure the cell
         let repository = self.items[indexPath.row]
-        cell.name.text = repository.name
-        print(repository.name)
-        cell.ownerLoginName.text = repository.owner.login
-        cell.size.text = String(repository.size)
+        cell.name.text = "Repository Name: \(repository.name)"
+        cell.ownerLoginName.text = "Owner Login Name: \(repository.owner.login)"
+        cell.size.text = "Size: \(String(repository.size)) bytes"
         if (repository.hasWiki) {
             cell.backgroundColor = .green
         } else {
