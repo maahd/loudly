@@ -49,6 +49,7 @@
 		BF6E2A0D2543BC8B00AF7751 = {
 			isa = PBXGroup;
 			children = (
+				BF74F859254610070048F046 /* README.md */,
 				BF6E2A182543BC8B00AF7751 /* loudly */,
 				BF6E2A172543BC8B00AF7751 /* Products */,
 			);
@@ -74,7 +75,6 @@
 				BF6E2A222543BC8D00AF7751 /* Assets.xcassets */,
 				BF6E2A242543BC8D00AF7751 /* LaunchScreen.storyboard */,
 				BF6E2A272543BC8D00AF7751 /* Info.plist */,
-				BF74F859254610070048F046 /* README.md */,
 			);
 			path = loudly;
 			sourceTree = "<group>";
