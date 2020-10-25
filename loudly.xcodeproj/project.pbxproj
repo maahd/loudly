@@ -32,6 +32,7 @@
 		BF6E2A322543C2B000AF7751 /* URLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelpers.swift; sourceTree = "<group>"; };
 		BF6E2A342543C9C200AF7751 /* RepositoryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailController.swift; sourceTree = "<group>"; };
 		BF6E2A362544C90200AF7751 /* RepositoryDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF74F859254610070048F046 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				BF6E2A222543BC8D00AF7751 /* Assets.xcassets */,
 				BF6E2A242543BC8D00AF7751 /* LaunchScreen.storyboard */,
 				BF6E2A272543BC8D00AF7751 /* Info.plist */,
+				BF74F859254610070048F046 /* README.md */,
 			);
 			path = loudly;
 			sourceTree = "<group>";
