@@ -8,6 +8,8 @@
 
 import Foundation
 
+// The Repositories struct is used to decode the JSON returned by the API call
+// It conforms to the Codable protocol
 struct Repositories: Codable {
     var items: [Item]
     
@@ -21,6 +23,7 @@ struct Repositories: Codable {
     }
 }
 
+// Repositories has an array of items
 struct Item: Codable {
     var name: String
     var owner: Owner
@@ -43,6 +46,7 @@ struct Item: Codable {
     }
 }
 
+// Each item has one owner
 struct Owner: Codable {
     var login: String
     

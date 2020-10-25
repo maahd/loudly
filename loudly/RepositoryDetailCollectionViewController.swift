@@ -62,6 +62,9 @@ class RepositoryDetailCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RepositoryDetailCollectionViewCell
     
         // Configure the cell
+        // all the info we need is in the item in the repository
+        // we set values for our 3 UILabels
+        // we set background color based on hasWiki boolean
         let repository = self.items[indexPath.row]
         cell.name.text = "Repository Name: \(repository.name)"
         cell.ownerLoginName.text = "Owner Login Name: \(repository.owner.login)"

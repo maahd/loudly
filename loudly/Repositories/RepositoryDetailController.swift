@@ -8,12 +8,15 @@
 
 import Foundation
 
+// send the query and decode it based on the Repositories struct
 class RepositoryDetailController {
     func fetchRepositories(completion: @escaping (Repositories?) -> Void) {
         let baseURL = URL(string: "https://api.github.com/search/repositories")!
 
         let query: [String: String] = [
             "q": "tetris"
+//            "page": "1",
+//            "per_page": "10"
         ]
 
         let url = baseURL.withQueries(query)!

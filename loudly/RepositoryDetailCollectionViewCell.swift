@@ -8,6 +8,7 @@
 
 import UIKit
 
+// outlets for the only 3 lables in our mini app
 class RepositoryDetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var ownerLoginName: UILabel!

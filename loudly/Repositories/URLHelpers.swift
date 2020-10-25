@@ -8,6 +8,7 @@
 
 import Foundation
 
+// URL helper method to add parameters
 extension URL {
     func withQueries(_ queries: [String: String]) -> URL? {
         var components = URLComponents(url: self, resolvingAgainstBaseURL: true)
